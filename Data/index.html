@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Blue Escape 💙</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="stars"></div>
+
+<header>
+
+<h1>Good Evening, Rhea 🌙</h1>
+
+<p>
+☕ Running on caffeine<br>
+🩺 Future Doctor<br>
+💙 Very Loved
+</p>
+
+</header>
+
+<section class="moods">
+
+<button onclick="showMood('burnout')">
+😴 Burnt Out
+</button>
+
+<button onclick="showMood('missing')">
+💋 Missing You
+</button>
+
+<button onclick="showMood('rnb')">
+🎧 R&B Night
+</button>
+
+<button onclick="showMood('doctor')">
+🩺 Doctor Mode
+</button>
+
+</section>
+
+<div id="moodDisplay"></div>
+
+<section class="daily-note">
+
+<h2>Daily Note 💌</h2>
+
+<p id="dailyNote"></p>
+
+</section>
+
+<section>
+
+<h2>Relationship Timeline</h2>
+
+<div id="timeline"></div>
+
+</section>
+
+<section>
+
+<h2>Pomodoro Timer</h2>
+
+<div id="timer">25:00</div>
+
+<button onclick="startTimer()">Start</button>
+<button onclick="pauseTimer()">Pause</button>
+<button onclick="resetTimer()">Reset</button>
+
+</section>
+
+<section>
+
+<h2>Catch My Hearts ❤️</h2>
+
+<div id="gameArea"></div>
+
+<p>Score: <span id="score">0</span></p>
+
+</section>
+
+<div id="secretHeart">💙</div>
+
+<div id="letterModal" class="hidden">
+
+<div class="modal-content">
+
+<h2>Letter To Rhea</h2>
+
+<p>
+Hey,
+
+I know med school can be exhausting.
+
+But I hope you remember that every
+late night and every difficult exam
+is bringing you closer to becoming
+the amazing doctor you'll be.
+
+I'm proud of you.
+
+Love,
+Me 💙
+</p>
+
+<button onclick="closeLetter()">
+Close
+</button>
+
+</div>
+
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/game.js"></script>
+<script src="js/memories.js"></script>
+
+</body>
+</html>
