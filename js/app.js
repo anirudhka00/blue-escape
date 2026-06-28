@@ -11,9 +11,6 @@ function showMood(type){
         missing:
         "Remember bar hopping, bowling and that auto ride home? 💋",
 
-        rnb:
-        "Playlist time. Add your Spotify playlist here 🎧",
-
         doctor:
         "Future doctor mode activated 🩺"
     };

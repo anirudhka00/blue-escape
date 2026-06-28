@@ -12,8 +12,6 @@
 </head>
 <body>
 
-<div id="stars"></div>
-
 <header>
 
 <h1>Good Evening, Rhea 🌙</h1>
@@ -21,7 +19,7 @@
 <p>
 ☕ Running on caffeine<br>
 🩺 Future Doctor<br>
-💙 Very Loved
+💙 Main Character, Very Loved
 </p>
 
 </header>
@@ -36,10 +34,6 @@
 💋 Missing You
 </button>
 
-<button onclick="showMood('rnb')">
-🎧 R&B Night
-</button>
-
 <button onclick="showMood('doctor')">
 🩺 Doctor Mode
 </button>
@@ -47,6 +41,47 @@
 </section>
 
 <div id="moodDisplay"></div>
+
+<section class="soundtrack-section">
+
+<div class="section-heading">
+<span class="eyebrow">Blue Romcom Soundtrack</span>
+<h2>Study Date Songs 🎵</h2>
+</div>
+
+<div class="song-grid">
+
+<article class="song-card">
+<h3>Suga Suga</h3>
+<p>Baby Bash, Frankie J</p>
+<iframe
+  src="https://open.spotify.com/embed/track/6Nq5lE0CeOAAAqN4qhkbZU?utm_source=generator"
+  width="100%"
+  height="152"
+  frameborder="0"
+  allowfullscreen=""
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+  loading="lazy">
+</iframe>
+</article>
+
+<article class="song-card">
+<h3>Ride Wit Me</h3>
+<p>Nelly, City Spud</p>
+<iframe
+  src="https://open.spotify.com/embed/track/3Gf5nttwcX9aaSQXRWidEZ?utm_source=generator"
+  width="100%"
+  height="152"
+  frameborder="0"
+  allowfullscreen=""
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+  loading="lazy">
+</iframe>
+</article>
+
+</div>
+
+</section>
 
 <section class="daily-note">
 
@@ -76,13 +111,79 @@
 
 </section>
 
-<section>
+<section class="game-section">
 
-<h2>Catch My Hearts ❤️</h2>
+<div class="section-heading">
+<span class="eyebrow">Productive Play</span>
+<h2>Case Rounds Sprint 🩺</h2>
+</div>
 
-<div id="gameArea"></div>
+<div id="gameArea" class="rounds-game">
 
-<p>Score: <span id="score">0</span></p>
+<div class="game-topline">
+<div>
+<span>Score</span>
+<strong id="score">0</strong>
+</div>
+<div>
+<span>Streak</span>
+<strong id="streak">0</strong>
+</div>
+<div>
+<span>Round</span>
+<strong id="roundNumber">1/8</strong>
+</div>
+</div>
+
+<div class="case-card">
+<p id="caseCategory"></p>
+<h3 id="casePrompt"></h3>
+<div id="answerChoices" class="answer-grid"></div>
+</div>
+
+<div id="gameFeedback" class="game-feedback"></div>
+
+<button id="nextCase" class="secondary-button">Next Case</button>
+
+</div>
+
+</section>
+
+<section class="arcade-section">
+
+<div class="section-heading">
+<span class="eyebrow">Arcade Break</span>
+<h2>Scrub Runner ⚡</h2>
+</div>
+
+<div class="arcade-shell">
+
+<div class="arcade-hud">
+<div>
+<span>Score</span>
+<strong id="arcadeScore">0</strong>
+</div>
+<div>
+<span>Time</span>
+<strong id="arcadeTime">30</strong>
+</div>
+<div>
+<span>Lives</span>
+<strong id="arcadeLives">3</strong>
+</div>
+</div>
+
+<canvas id="arcadeCanvas" width="760" height="360"></canvas>
+
+<div class="arcade-controls">
+<button id="moveLeft" aria-label="Move left">←</button>
+<button id="startArcade">Start Run</button>
+<button id="moveRight" aria-label="Move right">→</button>
+</div>
+
+<p id="arcadeMessage">Catch green study boosts and pink love boosts. Dodge red burnout drops.</p>
+
+</div>
 
 </section>
 
